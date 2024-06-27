@@ -1,4 +1,4 @@
-(*Question 1*)
+(*QUESTION N1)
 let rec hanoi dep aux dest n =
      if n > 0 then begin
          hanoi dep dest aux (n - 1);
@@ -9,7 +9,7 @@ let rec hanoi dep aux dest n =
     let () =
       hanoi "A" "B" "C" 5;;  
 
-(*Question 2*)  
+(*QUESTION N2*)  
 
 let rec hanoi_aux from to_ aux n =
   if n = 0 then ()
@@ -28,7 +28,7 @@ let () =
   hanoi n ;;
 
 
-(*Question 3*)
+(*QUESTION N3*)
 
 let rec hanoi n src dst aux =
   if n = 0 then ()
@@ -52,4 +52,4 @@ let rec time_hanoi n =
 let () =
   time_hanoi 5;;
 
-  (*C’est à partir de la valeur n=23 qu’on dépasse 10 seconds selon ce code. n est le nombre de disque*)
+  (*On constate que c’est lorsque n=23 qu’on dépasse les 10 seconds avec n qui représente le nombre de disque*)
